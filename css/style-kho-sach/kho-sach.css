@@ -1,0 +1,238 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hidden-print {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 142px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden-print .w1000 {
+  width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hidden-print .header-top {
+  height: 103px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.hidden-print .header-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+}
+
+.hidden-print .header-top ul .float-left {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+.hidden-print .header-top ul .float-left img {
+  width: 216px;
+  height: 86px;
+  margin-top: 4px;
+}
+
+.hidden-print .header-top ul .float-right .wrapper {
+  margin-top: 20px;
+  padding: 10px 25px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.hidden-print .header-top ul .float-right .wrapper img {
+  width: 35px;
+  height: 35px;
+}
+
+.hidden-print .header-top ul .float-right .wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../style-dang-nhap/images/button.jpg");
+  background-size: 100% 100%;
+  left: -100%;
+  top: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hidden-print .header-top ul .float-right .wrapper:hover::before {
+  left: 0;
+}
+
+.hidden-print .header-bottom {
+  background-color: #1b2f55;
+}
+
+.hidden-print .header-bottom .container {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.hidden-print .header-bottom nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+}
+
+.hidden-print .header-bottom .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden-print .header-bottom .main-menu li {
+  position: relative;
+}
+
+.hidden-print .header-bottom .main-menu li a {
+  color: white;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+.hidden-print .header-bottom .main-menu .sub-menu {
+  position: absolute;
+  background-color: #1b2f55;
+  padding: 15px 0px;
+  list-style: none;
+  width: 200px;
+  border: 1px solid #1b2f55;
+  display: none;
+}
+
+.hidden-print .header-bottom .main-menu .sub-menu a {
+  padding: 8px 15px;
+  border-bottom: 1px solid #1b2f55;
+}
+
+.hidden-print .header-bottom .main-menu .sub-menu li:hover a {
+  border-bottom: 1px solid red;
+}
+
+.hidden-print .header-bottom .main-menu .sub-menu li:last-child a {
+  border: none;
+}
+
+.hidden-print .header-bottom .main-menu li:hover .sub-menu {
+  display: block;
+}
+
+.hidden-print .header-bottom .main-menu > li > a {
+  position: relative;
+}
+
+.hidden-print .header-bottom .main-menu > li > a::before {
+  content: "";
+  height: 4px;
+  width: 0px;
+  background-color: red;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hidden-print .header-bottom .main-menu > li:hover > a::before {
+  width: 100%;
+}
+
+.hidden-print .header-bottom .main-menu > li.has-child::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  color: #8b9dac;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 18px 0px;
+}
+
+.hidden-print .header-bottom .login-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden-print .header-bottom .login-menu li {
+  position: relative;
+}
+
+.hidden-print .header-bottom .login-menu li a {
+  color: white;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+.hidden-print .header-bottom .login-menu .sub-menu {
+  position: absolute;
+  background-color: #1b2f55;
+  padding: 15px 0px;
+  list-style: none;
+  width: 200px;
+  border: 1px solid #1b2f55;
+  display: none;
+}
+
+.hidden-print .header-bottom .login-menu .sub-menu a {
+  padding: 8px 15px;
+  border-bottom: 1px solid #1b2f55;
+}
+
+.hidden-print .header-bottom .login-menu .sub-menu li:hover a {
+  border-bottom: 1px solid red;
+}
+
+.hidden-print .header-bottom .login-menu .sub-menu li:last-child a {
+  border: none;
+}
+
+.hidden-print .header-bottom .login-menu li:hover .sub-menu {
+  display: block;
+}
+
+.hidden-print .pic-center .w1000 {
+  width: 1000px;
+  margin: 500px;
+}
+/*# sourceMappingURL=kho-sach.css.map */

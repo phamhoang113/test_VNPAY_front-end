@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/logoBK" href="../images/logo-head.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Nhà sách Online - Huy Hoàng</title>
+    <link rel="stylesheet" href="../css/style-trang-chinh/trang-chinh.css">
+
+</head>
+
+<body>
+    <header class="hidden-print">
+        <div class="header-top">
+            <div class="w1000">
+                <ul>
+                    <li>
+                        <div class="float-left">
+                            <a class="logo-header" href="/" title="Huy Hoàng">
+                                <img src="../images/picture-header.png" alt="Huy Hoàng">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="float-right">
+                            <a class="wrapper" href="/" title="" target="blank" title="Huy Hoàng">
+                                <img id="slow" src="../images/gio-hang.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="w1000">
+                <div class="menu-bar">
+                    <nav class="container">
+                        <ul class="main-menu">
+                            <li><a href="../giao-dien/index.html"><strong>TRANG CHỦ</strong></a></li>
+                            <li><a href="../giao-dien/kho-sach.html"><strong>KHO SÁCH</strong></a></li>
+                            <li><a href="../giao-dien/kho-sach.html"><strong>THỂ LOẠI</strong></a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Menu 2.1</a></li>
+                                    <li><a href="">Menu 2.2</a></li>
+                                    <li><a href="">Menu 2.3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../giao-dien/gioi-thieu.html"><strong>GIỚI THIỆU</strong></a></li>
+                            <li><a href="../giao-dien/lien-he.html"><strong>LIÊN HỆ</strong></a></li>
+                        </ul>
+                        <ul class="login-menu">
+                            <li><a class="login" href="../dang-nhap/login.html"><strong>ĐĂNG NHẬP</strong></a>
+                                <ul class="sub-menu">
+                                    <li><a href="../dang-nhap/login.html">Thành viên</a></li>
+                                    <li><a href="../dang-nhap/login-admin.html">Admin</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+</body>
+
+</html>
